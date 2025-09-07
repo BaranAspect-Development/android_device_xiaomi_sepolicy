@@ -15,9 +15,6 @@ allow system_server vendor_displayfeature:fd *;
 get_prop(system_server, vendor_displayfeature_prop)
 hal_client_domain(system_server, vendor_hal_displayfeature_xiaomi)
 
-# Dolby
-hal_client_domain(system_server, hal_dms)
-
 # last_kmsg
 allow system_server proc_last_kmsg:file r_file_perms;
 
